@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rebook Application Flow OAuth2 Project</title>
+    <style type="text/css">
+      body {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+hr	{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+.app-desc {
+  clear: both;
+  margin-left: 20px;
+}
+.param-name {
+  width: 100%;
+}
+.license-info {
+  margin-left: 20px;
+}
+
+.license-url {
+  margin-left: 20px;
+}
+
+.model {
+  margin: 0 0 0px 20px;
+}
+
+.method {
+  margin-left: 20px;
+}
+
+.method-notes	{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre {
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.http-method {
+ text-transform: uppercase;
+}
+
+pre.get {
+  background-color: #0f6ab4;
+}
+
+pre.post {
+  background-color: #10a54a;
+}
+
+pre.put {
+  background-color: #c5862b;
+}
+
+pre.delete {
+  background-color: #a41e22;
+}
+
+.huge	{
+	color: #fff;
+}
+
+pre.example {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+code {
+  white-space: pre;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.method-path {
+  font-size: 1.5em;
+  background-color: #0f6ab4;
+}
+
+.up {
+  float:right;
+}
+
+.parameter {
+  width: 500px;
+}
+
+.param {
+  width: 500px;
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
+
+.param-desc {
+  width: 700px;
+  padding: 0 0 0 20px;
+  color: #777;
+}
+
+.param-type {
+  font-style: italic;
+}
+
+.param-enum-header {
+width: 700px;
+padding: 0 0 0 60px;
+color: #777;
+font-weight: bold;
+}
+
+.param-enum {
+width: 700px;
+padding: 0 0 0 80px;
+color: #777;
+font-style: italic;
+}
+
+.field-label {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.field-items	{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.param-header {
+  font-weight: bold;
+}
+
+.method-tags {
+  text-align: right;
+}
+
+.method-tag {
+  background: none repeat scroll 0% 0% #24A600;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+  <body>
+  <h1>Rebook Application Flow OAuth2 Project</h1>
+    <div class="app-desc">This is Rebooking project to change original PNR with new user selected itinerary</div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+    <div class="app-desc">Version: 1.0.0</div>
+    <div class="app-desc">BasePath:/venkata.saranu/Rebook/1.0.0</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+    <ol>
+      <li>OAuth AuthorizationUrl:TokenUrl:https://api.stage.aa.com/oauth/client_credential/accesstoken</li>
+    </ol>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Default">Default</a></h4>
+  <ul>
+  <li><a href="#healthGet"><code><span class="http-method">get</span> /health</code></a></li>
+  </ul>
+  <h4><a href="#Rebook">Rebook</a></h4>
+  <ul>
+  <li><a href="#rebook"><code><span class="http-method">post</span> /rebook</code></a></li>
+  </ul>
+
+  <h1><a name="Default">Default</a></h1>
+  <div class="method"><a name="healthGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /health</code></pre></div>
+    <div class="method-summary">Server heartbeat operation (<span class="nickname">healthGet</span>)</div>
+    <div class="method-notes">This operation shows how to override the global security defined above, as we want to open it up for all users.</div>
+
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    OK
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <h1><a name="Rebook">Rebook</a></h1>
+  <div class="method"><a name="rebook"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /rebook</code></pre></div>
+    <div class="method-summary">Rebook the original pnr (<span class="nickname">rebook</span>)</div>
+    <div class="method-notes">change original reservation with new info</div>
+
+
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="header">Content-Type</span> request header:
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">rebookRequest <a href="#RebookRequest">RebookRequest</a> (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; Rebook Request Data for Change Reservation </div>
+
+    </div>  <!-- field-items -->
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    User save
+        <a href="#"></a>
+    <h4 class="field-label">400</h4>
+    Invalid user information
+        <a href="#"></a>
+    <h4 class="field-label">404</h4>
+    User not found
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#RebookRequest"><code>RebookRequest</code> - </a></li>
+    <li><a href="#RebookRequest_allSlices"><code>RebookRequest_allSlices</code> - </a></li>
+    <li><a href="#RebookRequest_bagSegmentList"><code>RebookRequest_bagSegmentList</code> - </a></li>
+    <li><a href="#RebookRequest_corporateBookingInfo"><code>RebookRequest_corporateBookingInfo</code> - </a></li>
+    <li><a href="#RebookRequest_fareInfos"><code>RebookRequest_fareInfos</code> - </a></li>
+    <li><a href="#RebookRequest_fareInfos_adjustments"><code>RebookRequest_fareInfos_adjustments</code> - </a></li>
+    <li><a href="#RebookRequest_fareInfos_bookingInfoSegments"><code>RebookRequest_fareInfos_bookingInfoSegments</code> - </a></li>
+    <li><a href="#RebookRequest_fareInfos_bookingInfos"><code>RebookRequest_fareInfos_bookingInfos</code> - </a></li>
+    <li><a href="#RebookRequest_fareInfos_taxes"><code>RebookRequest_fareInfos_taxes</code> - </a></li>
+    <li><a href="#RebookRequest_frequentFlyerInfo"><code>RebookRequest_frequentFlyerInfo</code> - </a></li>
+    <li><a href="#RebookRequest_header"><code>RebookRequest_header</code> - </a></li>
+    <li><a href="#RebookRequest_newSlices"><code>RebookRequest_newSlices</code> - </a></li>
+    <li><a href="#RebookRequest_oldSegments"><code>RebookRequest_oldSegments</code> - </a></li>
+    <li><a href="#RebookRequest_oldSlices"><code>RebookRequest_oldSlices</code> - </a></li>
+    <li><a href="#RebookRequest_passengers"><code>RebookRequest_passengers</code> - </a></li>
+    <li><a href="#RebookRequest_remarksData"><code>RebookRequest_remarksData</code> - </a></li>
+    <li><a href="#RebookRequest_saleTotal"><code>RebookRequest_saleTotal</code> - </a></li>
+    <li><a href="#RebookRequest_segments"><code>RebookRequest_segments</code> - </a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="RebookRequest"><code>RebookRequest</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">header </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_header">RebookRequest_header</a></span>  </div>
+<div class="param">recordLocator </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Your Reservation PNR number to change Ex:YPFEXQ </div>
+<div class="param">reservationStatus </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> this is optional param Ex: Intial </div>
+<div class="param">reservationStatusCode </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> this is optional param Ex: 0 format: int32</div>
+<div class="param">corporateBookingInfo </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_corporateBookingInfo">RebookRequest_corporateBookingInfo</a></span>  </div>
+<div class="param">newSlices </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_newSlices">array[RebookRequest_newSlices]</a></span>  </div>
+<div class="param">allSlices </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_allSlices">array[RebookRequest_allSlices]</a></span>  </div>
+<div class="param">passengers </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_passengers">array[RebookRequest_passengers]</a></span>  </div>
+<div class="param">oldSlices </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_oldSlices">array[RebookRequest_oldSlices]</a></span>  </div>
+<div class="param">remarksData </div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_remarksData">RebookRequest_remarksData</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_allSlices"><code>RebookRequest_allSlices</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">sliceIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">bagSegmentList (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_bagSegmentList">array[RebookRequest_bagSegmentList]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_bagSegmentList"><code>RebookRequest_bagSegmentList</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">arrivalTime (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">departureTime (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">flightNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">bookingCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">carrierCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">originAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">destinationAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">cabinName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">fareCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_corporateBookingInfo"><code>RebookRequest_corporateBookingInfo</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>This is optional object need to populate this when your reservation contains any corporate info like Corporate PNR with discount code or tour code ...etc like remarks</div>
+    <div class="field-items">
+      <div class="param">type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">discountCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">tourCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">osiRemarks (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_fareInfos"><code>RebookRequest_fareInfos</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">bookingInfos (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_fareInfos_bookingInfos">array[RebookRequest_fareInfos_bookingInfos]</a></span>  </div>
+<div class="param">taxes (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_fareInfos_taxes">array[RebookRequest_fareInfos_taxes]</a></span>  </div>
+<div class="param">fareCalculationLine (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_fareInfos_adjustments"><code>RebookRequest_fareInfos_adjustments</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">code (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">amount (optional)</div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_fareInfos_bookingInfoSegments"><code>RebookRequest_fareInfos_bookingInfoSegments</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">index (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">sliceIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">hostSegmentId (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">used (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">adjustments (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_fareInfos_adjustments">array[RebookRequest_fareInfos_adjustments]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_fareInfos_bookingInfos"><code>RebookRequest_fareInfos_bookingInfos</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">fareCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">fareAmount (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">mileageRate (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">bookingInfoSegments (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_fareInfos_bookingInfoSegments">array[RebookRequest_fareInfos_bookingInfoSegments]</a></span>  </div>
+<div class="param">governingCarrier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+<div class="param">ticketDesignator (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_fareInfos_taxes"><code>RebookRequest_fareInfos_taxes</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">taxCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">countryCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+<div class="param">price (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">salePrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">originAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_frequentFlyerInfo"><code>RebookRequest_frequentFlyerInfo</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">airlineCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">frequentFlyerNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">frequentFlyerTier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">oneWorldTier (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_header"><code>RebookRequest_header</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>this will contains client details</div>
+    <div class="field-items">
+      <div class="param">clientId (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Ex: AACOM,NDC // your group name </div>
+<div class="param">transactionId (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> UUID to uniquly identify your request for further debug </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_newSlices"><code>RebookRequest_newSlices</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">index (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">segments (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_segments">array[RebookRequest_segments]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_oldSegments"><code>RebookRequest_oldSegments</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">segmentIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">originAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">destinationAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_oldSlices"><code>RebookRequest_oldSlices</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">sliceIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">oldSegments (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_oldSegments">array[RebookRequest_oldSegments]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_passengers"><code>RebookRequest_passengers</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">nameRefNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">ticketNumbers (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+<div class="param">firstName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">lastName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">dateOfBirth (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">premiumCreditCardHolder (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">passengerType (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">frequentFlyerInfo (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_frequentFlyerInfo">RebookRequest_frequentFlyerInfo</a></span>  </div>
+<div class="param">paxTypeCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">saleTotal (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">salePrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">saleTaxes (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">reissueNetPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_saleTotal">RebookRequest_saleTotal</a></span>  </div>
+<div class="param">penalityPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: nullable</div>
+<div class="param">fareInfos (optional)</div><div class="param-desc"><span class="param-type"><a href="#RebookRequest_fareInfos">RebookRequest_fareInfos</a></span>  </div>
+<div class="param">waiverCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">endorsement (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">formOfPayment (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_remarksData"><code>RebookRequest_remarksData</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>this is a rebook client request</div>
+    <div class="field-items">
+      <div class="param">ipaddress (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">transactionId (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">pointOfSale (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">email (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">isInstantTicketing (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_saleTotal"><code>RebookRequest_saleTotal</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">zero (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">currencySymbol (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">currencyCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">amount (optional)</div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="RebookRequest_segments"><code>RebookRequest_segments</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">index (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">sliceIndex (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">hostSegmentId (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  format: int32</div>
+<div class="param">originAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">destinationAirport (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">departureTime (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">flightNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">carrierCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">operatingCarrierCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">airCraftType (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">fareCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">bookingCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">originCountryCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">destinationCountryCode (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">marriedSegment (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span>  </div>
+<div class="param">arrivalTime (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">cabinName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  </body>
+</html>
